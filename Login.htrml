@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <section class="card">
+        <form id="form">
+            <h1>Login</h1>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <div class="input-field">
+                    <input
+                    type="email"
+                    placeholder="Digite seu email">
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="password">Senha</label>
+                <div class="input-field">
+                    <input
+                    type="password"
+                    placeholder="Digite sua senha">
+                </div>
+            </div>
+            <a class="forgot" href="#">Esqueceu a sua senha?</a>
+            <button id="sub" type="submit">Entrar</button>
+        </form>
+</body>
+</html>
