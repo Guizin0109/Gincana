@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f0ff; /* azul claro no fundo */
+  }
+  
+  .conteudo {
+    width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #a5cfff; /* sombra com tom azul */
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cce6ff; /* azul mais claro no header */
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  header .texto {
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #7fbfff;
+    background-color: #f0f8ff;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #3399ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1a75d1;
+  }
+  
+  .presenca-log {
+    margin-top: 20px;
+    background: #f0f8ff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #b3daff;
+  }
+  
+  .presenca-log ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #003366;
+   }

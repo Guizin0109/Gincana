@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chamada Escolar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="conteudo">
+    <header>
+      <div class="texto">Chamada Escolar</div>
+      <img src="etec_logo.png" width="100px" />
+    </header>
+
+    <main>
+      <h2>Leitor Biométrico</h2>
+      <p>Simulação: Digite o RA do aluno e clique em "Registrar Digital".</p>
+      
+      <input type="text" id="ra" placeholder="Digite o RA do aluno" />
+      <button onclick="registrarPresenca()">Registrar Digital</button>
+
+      <div class="presenca-log">
+        <h3>Presenças registradas:</h3>
+        <ul id="listaPresencas">
+          <!-- Presenças vão aparecer aqui -->
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <div class="etec">Etec - Chamada Escolar</div>
+      <div class="rodape">Centro Paula Souza. Desenvolvido por você ✨</div>
+    </footer>
+  </div>
+
+  <script>
+    function registrarPresenca() {
+      const ra = document.getElementById("ra").value;
+      const lista = document.getElementById("listaPresencas");
+
+      if (ra.trim() === "") {
+        alert("Digite o RA do aluno!");
+        return;
+      }
+
+      const item = document.createElement("li");
+      const dataHora = new Date().toLocaleString();
+      item.textContent = `RA: ${ra} - Presente em ${dataHora}`;
+      lista.appendChild(item);
+
+      document.getElementById("ra").value = "";
+    }
+  </script>
+</body>
+</html>
